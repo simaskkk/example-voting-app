@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: db
+    app.openshift.io/runtime: postgresql
   name: db
   namespace: vote
 spec:
