@@ -4,6 +4,8 @@ metadata:
   labels:
     app: db
     app.openshift.io/runtime: postgresql
+  annotations:
+    app.openshift.io/connects-to: result
   name: db
   namespace: vote
 spec:
