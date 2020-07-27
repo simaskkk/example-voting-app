@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: vote
+    app.openshift.io/runtime: python
   name: vote
   namespace: vote
 spec:
