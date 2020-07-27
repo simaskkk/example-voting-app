@@ -6,11 +6,12 @@ metadata:
   name: result
   namespace: vote
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
-  - name: "result-service"
-    port: 5001
-    targetPort: 8080
-    nodePort: 31001
+    - name: http
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
   selector:
     app: result
+  sessionAffinity: None
