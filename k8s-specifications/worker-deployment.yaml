@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: worker
+    app.openshift.io/runtime=dotnet
   name: worker
   namespace: vote
 spec:
