@@ -19,11 +19,7 @@ spec:
       - image: image-registry.openshift-image-registry.svc:5000/openshift/postgresql:10
         name: postgres
         env:
-        - name: POSTGRESQL_USER
-          value: postgres
-        - name: POSTGRESQL_PASSWORD
-          value: postgres
-        - name: POSTGRESQL_DATABASE
+        - name: POSTGRESQL_ADMIN_PASSWORD
           value: postgres
         ports:
         - containerPort: 5432
