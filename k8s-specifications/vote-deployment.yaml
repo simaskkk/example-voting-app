@@ -4,6 +4,8 @@ metadata:
   labels:
     app: vote
     app.openshift.io/runtime: python
+  annotations:
+    app.openshift.io/connects-to: redis
   name: vote
   namespace: vote
 spec:
