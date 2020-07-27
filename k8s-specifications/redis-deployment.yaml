@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: redis
+    app.openshift.io/runtime: redis
   name: redis
   namespace: vote
 spec:
