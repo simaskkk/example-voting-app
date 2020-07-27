@@ -4,6 +4,8 @@ metadata:
   labels:
     app: redis
     app.openshift.io/runtime: redis
+  annotations:
+    app.openshift.io/connects-to: worker
   name: redis
   namespace: vote
 spec:
