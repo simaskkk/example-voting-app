@@ -4,6 +4,8 @@ metadata:
   labels:
     app: worker
     app.openshift.io/runtime: dotnet
+  annotations:
+    app.openshift.io/connects-to: db
   name: worker
   namespace: vote
 spec:
