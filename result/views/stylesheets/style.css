@@ -17,7 +17,7 @@ body{
 .divider{
   height: 150px;
   width:2px;
-  background-color: #C9C0CE;
+  background-color: #F9C0CE;
   position: relative;
   top: 50%;
   float: left;
@@ -25,11 +25,11 @@ body{
 }
 
 #background-stats-1{
-  background-color: #f196f3;
+  background-color: #f19ff3;
 }
 
 #background-stats-2{
-  background-color: #0fcbca;
+  background-color: #0fcbff;
 }
 
 #content-container{
